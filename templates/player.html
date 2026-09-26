@@ -543,13 +543,13 @@
   // Multiple servers so users can switch if one is down or blocked
   const SOURCES = {
     movie: [
-      { name: 'Server 1', url: id        => `https://www.vidking.net/embed/movie/${id}?color=ff0000` },
-      { name: 'Server 2', url: id        => `https://vidsrc.to/embed/movie/${id}` },
+      { name: 'Server 1', url: id        => `https://vidlink.pro/movie/${id}` },
+      { name: 'Server 2', url: id        => `https://vidsrc.sbs/embed/movie/${id}` },
       { name: 'Server 3', url: id        => `https://www.2embed.cc/embed/${id}` },
     ],
     tv: [
-      { name: 'Server 1', url: (id,s,e) => `https://www.vidking.net/embed/tv/${id}/${s}/${e}?color=ff0000&episodeSelector=true` },
-      { name: 'Server 2', url: (id,s,e) => `https://vidsrc.to/embed/tv/${id}/${s}/${e}` },
+      { name: 'Server 1', url: (id,s,e) => `https://vidlink.pro/tv/${id}/${s}/${e}` },
+      { name: 'Server 2', url: (id,s,e) => `https://vidsrc.sbs/embed/tv/${id}/${s}/${e}`} ,
       { name: 'Server 3', url: (id,s,e) => `https://www.2embed.cc/embedtv/${id}&s=${s}&e=${e}` },
     ],
   };
